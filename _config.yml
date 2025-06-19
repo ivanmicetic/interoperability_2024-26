@@ -1,43 +1,70 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: EIP 24-26
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+topnav_title: Interoperability Platform 2024–26
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+description: ELIXIR’s Interoperability Platform 2024–26 activities
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@4.2.0
+
+exclude:
+  - README.md
+  - vendor
+  - Gemfile
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+        permalink: /:basename
+        layout: "page"
+        sidebar: main
+
+theme_variables:
+  # git_host: GitHub
+  # back_to_top: true
+  # dev-info-banner: false
+  # privacy_statement_url: /privacy
+  # github_buttons:
+  #   position: top
+  #   edit_me: true
+  #   open_issue: true
+  #   history: true
+  # datatables:
+  #   searchbuilder: True
+  # headings:
+  #   related-pages: Related pages
+  #   more-information-tiles: More information
+  #   resource-table-all: Tools and resources on this page
+  #   resource-table-all-collapse: false
+  #   affiliation-tiles-page: Affiliations
+  #   contributor-minitiles-page: Contributors
+  # toc:
+  #   min_headings: 2
+  #   headings: 'h2'
+  # topnav:
+  # theme: light
+  brand_logo: assets/img/main_logo.svg
+  # github: true
+  # twitter: false
+  # bluesky: false
+  # linkedin: false
+  # fosstodon: false
+  # theme_color: 0d6efd
+  # fonts:
+  #   - url towards a font
+
+  plugins:
+    - elixir-toolkit-theme-plugins
+    - jekyll-redirect-from
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - jekyll-github-metadata
+    - jemoji
+    - webrick
+
+github:
+  repository_url: https://github.com/elixir-europe/interoperability_2024-26
+  source:
+    branch: main
