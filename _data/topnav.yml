@@ -3,4 +3,7 @@
 subitems:
 - title: Home
   url: /index
-    
+- title: Example
+  url: /example_page
+- title: About
+  url: /about_page
