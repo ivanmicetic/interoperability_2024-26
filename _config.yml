@@ -20,6 +20,24 @@ defaults:
         permalink: /:basename
         layout: "page"
         sidebar: main
+  -
+    scope:
+      path: "pages/framework"
+    values:
+#      sidebar: main
+      sidebar: framework
+  -
+    scope:
+      path: "pages/stories"
+    values:
+#      sidebar: main
+      sidebar: stories
+  -
+    scope:
+      path: "pages/resources"
+    values:
+#      sidebar: main
+      sidebar: resources
 
 theme_variables:
   # git_host: GitHub

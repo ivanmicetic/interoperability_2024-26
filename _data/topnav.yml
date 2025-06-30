@@ -1,9 +1,9 @@
-## 
-## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
 subitems:
-- title: Home
+- title: EIP 24-26
   url: /index
-- title: Example
-  url: /example_page
-- title: About
-  url: /about_page
+- title: Framework
+  url: /framework
+- title: Stories
+  url: /stories
+- title: Resources
+  url: /resources
