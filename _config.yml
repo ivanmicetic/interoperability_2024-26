@@ -8,6 +8,8 @@ remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@4.2.0
 
 exclude:
   - README.md
+  - Dockerfile
+  - docker-compose.yml
   - vendor
   - Gemfile
 
