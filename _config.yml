@@ -12,6 +12,7 @@ exclude:
   - docker-compose.yml
   - vendor
   - Gemfile
+  - Gemfile.lock
 
 defaults:
   -
@@ -75,14 +76,23 @@ theme_variables:
   # fonts:
   #   - url towards a font
 
-  plugins:
-    - elixir-toolkit-theme-plugins
-    - jekyll-redirect-from
-    - jekyll-seo-tag
-    - jekyll-sitemap
-    - jekyll-github-metadata
-    - jemoji
-    - webrick
+plugins:
+  - elixir-toolkit-theme-plugins
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jemoji
+  - webrick
+
+sass:
+  style: compressed
+  sourcemap: always
+  silence_deprecations: # TODO: Fix https://sass-lang.com/documentation/js-api/interfaces/deprecations/
+    - import
+    - global-builtin
+    - color-functions
+    - mixed-decls
 
 github:
   repository_url: https://github.com/elixir-europe/interoperability_2024-26
