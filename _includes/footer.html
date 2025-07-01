@@ -4,42 +4,27 @@
             {%- for column in site.data.footer.columns %}
             {%- if column.type == "image" %}
             <div class="col-6 col-lg-{{column.width}} d-flex justify-content-lg-{% if forloop.first == true %}start{% elsif forloop.last == true %}end{% else %}center{% endif %}">
-                {%- if column.link %}
-                <a href="{{ column.link }}"><img class="my-auto" width="{{column.image_width}}"
-                                                 src="{{ column.src | relative_url }}" alt="{{column.alt}}"/></a>
-                {%- else %}
-                <img class="my-auto" width="{{column.image_width}}" src="{{ column.src | relative_url }}"
-                     alt="{{column.alt}}"/>
-                {%- endif %}
-                {%- if column.text %}
-                <div class="footer-text">
-                    {{ column.text | markdownify }}
-                </div>
-                {%- endif %}
-            </div>
-            {%- elsif column.type == "image2" %}
-            <div class="col-6 col-lg-{{column.width}} d-flex justify-content-lg-{% if forloop.first == true %}start{% elsif forloop.last == true %}end{% else %}center{% endif %}">
                 <div class="row align-items-center">
-                    <div class="col-auto pr-0">
+                    <div class="col pr-0">
                         {%- if column.link %}
                         <a href="{{ column.link }}">
-                            <img class="my-auto pr-0" width="{{column.image_width}}"
-                                 src="{{ column.src | relative_url }}"
+                            <img class="my-auto" width="{{column.image_width}}" src="{{ column.src | relative_url }}"
                                  alt="{{column.alt}}"/>
                         </a>
                         {%- else %}
-                        <img class="my-auto pr-0" width="{{column.image_width}}" src="{{ column.src | relative_url }}"
+                        <img class="my-auto" width="{{column.image_width}}" src="{{ column.src | relative_url }}"
                              alt="{{column.alt}}"/>
                         {%- endif %}
                     </div>
-                    <div class="col footer-text pl-0">
+                    {%- if column.text %}
+                    <div class="col-7 footer-text pl-0 d-none d-xl-block">
                         {{ column.text | markdownify }}
                     </div>
+                    {%- endif %}
                 </div>
             </div>
             {%- elsif column.type == "links" %}
-<!--            <div class="col-6 col-lg-{{column.width}} d-flex justify-content-lg-{% if forloop.first == true %}start{% elsif forloop.last == true %}end{% else %}center{% endif %}">-->
-            <div class="col-6 px-4 col-lg-{{column.width}} d-flex justify-content-lg-{% if forloop.first == true %}start{% elsif forloop.last == true %}end{% else %}start{% endif %}">
+            <div class="col-6 px-4 col-lg-{{column.width}} d-flex justify-content-lg-start">
                 <div class="align-self-center">
                     {%- if column.title != nil %}
                     <span class="footer-title">{{column.title}}</span>

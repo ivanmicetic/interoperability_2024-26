@@ -8,8 +8,6 @@ columns:
     src: 'assets/img/Icon-text_InteroperabilityPlatform.svg'
     alt: Interop Platform logo
     link: 'https://elixir-europe.org/platforms/interoperability'
-#  - type: links
-#    width: 1
   - type: links
     width: 8
     children:
@@ -19,7 +17,7 @@ columns:
         url: /about
       - url_text: Documents
         url: /documents
-  - type: image2
+  - type: image
     image_width: 88px
     width: 2
     src: 'assets/img/EU-flag.svg'
