@@ -1,24 +1,34 @@
-copyright: Copyright notice
-extra_line: 
+copyright: "© ELIXIR Interoperability Platform 2024.<br>Content is licensed under CC BY 4.0."
+#extra_line: extra line of text ...
+citation: This site is under construction and shows a draft version of the EIP activities.<br>The content is not final and may change over time. Please check back later for updates.
 columns:
   - type: image
     image_width: 88px
-    width: 2
+    width: 1
     src: 'assets/img/Icon-text_InteroperabilityPlatform.svg'
     alt: Interop Platform logo
+    link: 'https://elixir-europe.org/platforms/interoperability'
+#  - type: links
+#    width: 1
   - type: links
-    width: 3
-    children: 
+    width: 8
+    children:
       - url_text: Home
         url: /
-  - type: links
-    width: 3
-    children: 
-      - url_text: About page
+      - url_text: About Interoperability Platform
         url: /about
-  - type: image
+      - url_text: Documents
+        url: /documents
+  - type: image2
     image_width: 88px
     width: 2
+    src: 'assets/img/EU-flag.svg'
+    link: 'https://european-union.europa.eu/'
+    alt: EU flag
+    text: "Funded by the European Union"
+  - type: image
+    image_width: 88px
+    width: 1
     src: 'assets/img/ELIXIR_logo_standard.svg'
+    link: 'https://elixir-europe.org/'
     alt: ELIXIR Europe logo
-
