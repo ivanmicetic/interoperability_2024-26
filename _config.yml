@@ -4,7 +4,7 @@ topnav_title: Interoperability Platform 2024–26
 
 description: ELIXIR’s Interoperability Platform 2024–26 activities
 
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@4.2.0
+theme: elixir-toolkit-theme
 
 exclude:
   - README.md
