@@ -1,0 +1,98 @@
+title: EIP 24-26
+
+topnav_title: Interoperability Platform 2024–26
+
+description: ELIXIR’s Interoperability Platform 2024–26 activities
+
+theme: elixir-toolkit-theme
+
+exclude:
+  - README.md
+  - Dockerfile
+  - docker-compose.yml
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+        permalink: /:basename
+        layout: "page"
+        sidebar: main
+        no_robots: true # TODO: Set to false when initial content has been finalised
+  -
+    scope:
+      path: "pages/framework"
+    values:
+      sidebar: framework
+  -
+    scope:
+      path: "pages/stories"
+    values:
+      sidebar: stories
+  -
+    scope:
+      path: "pages/resources"
+    values:
+      sidebar: resources
+
+theme_variables:
+  # git_host: GitHub
+  # back_to_top: true
+  # dev-info-banner: false
+  # privacy_statement_url: /privacy
+  # github_buttons:
+  #   position: top
+  #   edit_me: true
+  #   open_issue: true
+  #   history: true
+  # datatables:
+  #   searchbuilder: True
+  # headings:
+  #   related-pages: Related pages
+  #   more-information-tiles: More information
+  #   resource-table-all: Tools and resources on this page
+  #   resource-table-all-collapse: false
+  #   affiliation-tiles-page: Affiliations
+  #   contributor-minitiles-page: Contributors
+  # toc:
+  #   min_headings: 2
+  #   headings: 'h2'
+  # topnav:
+  # theme: light
+  brand_logo: assets/img/main_logo.svg
+  # github: true
+  # twitter: false
+  # bluesky: false
+  # linkedin: false
+  # fosstodon: false
+  # theme_color: 0d6efd
+  # fonts:
+  #   - url towards a font
+
+plugins:
+  - elixir-toolkit-theme-plugins
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jemoji
+  - webrick
+
+sass:
+  style: compressed
+  sourcemap: always
+  silence_deprecations: # TODO: Fix https://sass-lang.com/documentation/js-api/interfaces/deprecations/
+    - import
+    - global-builtin
+    - color-functions
+    - mixed-decls
+
+github:
+  repository_url: https://github.com/elixir-europe/interoperability_2024-26
+  source:
+    branch: main
