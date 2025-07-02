@@ -23,6 +23,7 @@ defaults:
         permalink: /:basename
         layout: "page"
         sidebar: main
+        no_robots: true # TODO: Set to false when initial content has been finalised
   -
     scope:
       path: "pages/framework"
