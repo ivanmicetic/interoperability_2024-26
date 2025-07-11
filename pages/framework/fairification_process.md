@@ -17,7 +17,7 @@ _The FAIRification Template and the FAIRification Workplan, are available to sup
 
 ![The FAIRification Framework](../../assets/img/FAIRificationFramework.png)
 _**Figure 1 - Overview of the FAIRification Framework**_  
-_The four phases of the FAIRification Framework are supported, if needed, but the **"FAIRification Template"** and the **"FAIRification Workplan"**._  
+_The four phases of the FAIRification Process are supported, if needed, but the **"FAIRification Template"** and the **"FAIRification Workplan"**._  
 
 ### 1. The FAIRification Process  
 ![The FAIRification Process](../../assets/img/FAIRificationProcess-menu-00.png)
