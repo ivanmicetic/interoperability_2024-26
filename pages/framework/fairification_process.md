@@ -1,5 +1,5 @@
 ---
-title: FAIRification Process page
+title: FAIRification Process
 ---
 # The FAIRification Framework
 
