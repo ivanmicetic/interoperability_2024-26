@@ -1,6 +1,4 @@
 copyright: "© ELIXIR Interoperability Platform 2024.<br>Content is licensed under CC BY 4.0."
-#extra_line: extra line of text ...
-citation: This site is under construction and shows a draft version of the EIP activities.<br>The content is not final and may change over time. Please check back later for updates.
 columns:
   - type: image
     image_width: 88px
